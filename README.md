@@ -33,10 +33,10 @@ npm run dist:deb
 Le paquet apparaît dans `dist/`. Il peut être installé sur Kali ou une autre distribution Debian avec :
 
 ```bash
-sudo apt install ./dist/gml-linux_0.1.0_amd64.deb
+sudo apt install ./dist/gml-linux_0.1.1_amd64.deb
 ```
 
-Le paquet déclare Wine comme dépendance Debian. Si le dépôt de ta distribution utilise un nom de paquet différent, installe Wine avec les instructions de cette distribution avant d’utiliser GML.
+Le paquet inclut l’exécutable GML et Electron, et déclare Wine comme dépendance Debian. Les prérequis propres à chaque jeu (par exemple certains composants Visual C++ ou DirectX) ne sont pas universels et ne sont pas intégrés dans le paquet. Si un jeu en réclame, ajoute-les dans le préfixe Wine de ce jeu avec l’outil approprié.
 
 ### Installation graphique avec GDebi
 
@@ -58,6 +58,6 @@ Le workflow `.github/workflows/build-linux.yml` construit le `.deb` sur GitHub A
 Un tag `v*` déclenche le build et publie automatiquement le `.deb` dans une Release GitHub. La Release contient aussi les notes générées par GitHub :
 
 ```bash
-git tag v0.1.0
-git push origin v0.1.0
+git tag v0.1.1
+git push origin v0.1.1
 ```

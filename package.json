@@ -1,13 +1,16 @@
 {
   "name": "gml-linux",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Bibliothèque graphique pour lancer des jeux Windows sous Linux avec Wine",
   "main": "src/main.js",
   "author": "GML contributors",
   "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/Dev-Messy0/game-emu-linux.git" },
+  "homepage": "https://github.com/Dev-Messy0/game-emu-linux",
+  "bugs": { "url": "https://github.com/Dev-Messy0/game-emu-linux/issues" },
   "scripts": {
     "start": "electron .",
-    "dist:deb": "electron-builder --linux deb"
+    "dist:deb": "electron-builder --linux deb --publish never"
   },
   "devDependencies": {
     "electron": "^45.4.1",
@@ -21,6 +24,8 @@
     "linux": {
       "icon": "assets/icon.png",
       "category": "Game",
+      "desktopName": "GML",
+      "syncDesktopName": true,
       "target": ["deb"],
       "maintainer": "GML contributors",
       "synopsis": "Bibliothèque et lanceur de jeux Windows sous Linux",
