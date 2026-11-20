@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#34264f"/><stop offset=".38" stop-color="#db786d"/><stop offset=".62" stop-color="#ffb987"/><stop offset="1" stop-color="#273452"/></linearGradient>
+    <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#223149"/><stop offset="1" stop-color="#080e19"/></linearGradient>
+    <radialGradient id="sun"><stop stop-color="#fff1c4"/><stop offset=".35" stop-color="#ffcb9d"/><stop offset="1" stop-color="#ffad9870"/></radialGradient>
+    <linearGradient id="road" x2="0" y2="1"><stop stop-color="#30374a"/><stop offset="1" stop-color="#111929"/></linearGradient>
+    <pattern id="windows" width="22" height="26" patternUnits="userSpaceOnUse"><rect x="5" y="5" width="5" height="8" rx="1" fill="#ffcf9a" opacity=".7"/><rect x="14" y="5" width="4" height="8" rx="1" fill="#83c8ff" opacity=".42"/></pattern>
+    <filter id="blur"><feGaussianBlur stdDeviation="32"/></filter>
+  </defs>
+  <rect width="1440" height="520" fill="url(#sky)"/>
+  <circle cx="1040" cy="145" r="115" fill="url(#sun)" opacity=".8"/>
+  <ellipse cx="1010" cy="171" rx="315" ry="120" fill="#ff987f" opacity=".15" filter="url(#blur)"/>
+  <path d="M0 292 110 252l88 37 120-82 100 73 103-48 112 57 118-100 106 65 99-43 115 66 95-35 174 84v194H0Z" fill="#202c43" opacity=".55"/>
+  <path d="M0 331 88 301l82 30 105-91 84 88 85-54 90 60 120-83 94 69 105-43 80 48 90-63 103 47 116-47 198 85v173H0Z" fill="#19253a"/>
+  <g fill="#111a2a" opacity=".88">
+    <path d="M0 253h84v164H0zM99 293h93v147H99zM207 234h68v196h-68zM296 274h109v170H296zM429 246h88v205h-88zM536 297h78v159h-78zM639 219h112v230H639zM766 275h87v184h-87zM873 238h64v213h-64zM958 288h110v174H958zM1083 228h80v239h-80zM1179 273h107v203h-107zM1303 244h137v230h-137z"/>
+  </g>
+  <g fill="url(#windows)" opacity=".75">
+    <path d="M0 253h84v164H0zM99 293h93v147H99zM207 234h68v196h-68zM296 274h109v170H296zM429 246h88v205h-88zM536 297h78v159h-78zM639 219h112v230H639zM766 275h87v184h-87zM873 238h64v213h-64zM958 288h110v174H958zM1083 228h80v239h-80zM1179 273h107v203h-107zM1303 244h137v230h-137z"/>
+  </g>
+  <rect y="423" width="1440" height="97" fill="url(#ground)"/>
+  <path d="M1000 420h246l194 100H832z" fill="url(#road)" opacity=".95"/>
+  <path d="m1128 436 21-3 11 19-28 3zm52 55 39-4 17 24-51 5z" fill="#f6c792" opacity=".7"/>
+  <path d="M0 429h1440" stroke="#f5a783" stroke-opacity=".44" stroke-width="2"/>
+  <rect width="1440" height="520" fill="url(#sky)" opacity=".08"/>
+</svg>

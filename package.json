@@ -1,0 +1,31 @@
+{
+  "name": "gml-linux",
+  "version": "0.1.0",
+  "description": "Bibliothèque graphique pour lancer des jeux Windows sous Linux avec Wine",
+  "main": "src/main.js",
+  "author": "GML contributors",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist:deb": "electron-builder --linux deb"
+  },
+  "devDependencies": {
+    "electron": "^45.4.1",
+    "electron-builder": "^26.18.0"
+  },
+  "build": {
+    "appId": "org.gameemulinux.launcher",
+    "productName": "GML",
+    "directories": { "output": "dist" },
+    "files": ["src/**/*", "package.json"],
+    "linux": {
+      "icon": "assets/icon.png",
+      "category": "Game",
+      "target": ["deb"],
+      "maintainer": "GML contributors",
+      "synopsis": "Bibliothèque et lanceur de jeux Windows sous Linux",
+      "description": "Organisez votre bibliothèque de jeux et lancez les exécutables Windows avec Wine."
+    },
+    "deb": { "depends": ["wine"] }
+  }
+}
